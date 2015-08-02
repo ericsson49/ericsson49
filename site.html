@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Object Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar" style="background-color: #337AB7"></span>
+        <span class="icon-bar" style="background-color: #337AB7"></span>
+        <span class="icon-bar" style="background-color: #337AB7"></span>
+      </button>
+      <a class="navbar-brand" href="#home" data-toggle="tab">Object Studio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a data-toggle="tab" href="#model">Model</a></li>
+                  <li><a data-toggle="tab" href="#jewelry">Jewelry</a></li>
+                  <li><a data-toggle="tab" href="#food">Food</a></li>
+              </ul>
+            </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid">
+  <ul class="nav nav-tabs collapse" id="portfolio">
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#jewelry">Jewelry</a></li>
+    <li><a data-toggle="tab" href="#food">Food</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <iframe src="https://rawgit.com/ericsson49/urasol/master/main.html" width="800" height="638" frameborder="0"></iframe>
+    </div>
+    <div id="model" class="tab-pane fade">
+      <h3>Model</h3>
+      <iframe src="https://rawgit.com/ericsson49/urasol/master/model.html" width="800" height="638" frameborder="0"></iframe>
+    </div>
+    <div id="jewelry" class="tab-pane fade">
+      <h3>Jewelry</h3>
+      <iframe src="https://rawgit.com/ericsson49/urasol/master/jewelry.html" width="800" height="638" frameborder="0"></iframe>
+    </div>
+    <div id="food" class="tab-pane fade">
+      <h3>Food</h3>
+      <iframe src="https://rawgit.com/ericsson49/urasol/master/food.html" width="800" height="638" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+    <p class="act"><b>Active Tab</b>: <span></span></p>
+<div class="container">
+  <div class="row">
+   <div class="col-md-6">
+    <p class="font_9"><span class="color_16">@ 2015 «AVV-production»</span></p>
+   </div>
+
+   <div class="col-md-6">
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="https://vk.com/urasol" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/a76659a6c8524bd0b7d362fa91160498.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="https://www.facebook.com/profile.php?id=1846041705" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/72a44c1b3b7c450287b9f4dd21be1548.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="http://instagram.com/ura.soloviov" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/15501a32e0b449b48fa639fd8e6935aa.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="http://pinterest.com/urasol" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/51595f20831643d4b785234fa63218d1.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+   </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('a[data-toggle]').on('shown.bs.tab', function(event){
+        var a = $(event.target)[0];
+        var x = a.href.split('#');
+        x = x.length < 2 ? '' : x[1];
+        $(".act span").text(x);
+        if (x != 'home') {
+          $('#portfolio').collapse('show');
+        } else {
+          $('#portfolio').collapse('hide');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
