@@ -7,10 +7,11 @@
 
 <body>
     <script type="text/javascript" src="https://rawgit.com/jssor/slider/master/js/jssor.slider.min.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/ericsson49/urasol/master/gallery_init.js"></script>
+    <script type="text/javascript" src="gallery_init.js"></script>
+    <link href="gallery_style.css" rel="stylesheet">
+
     <!-- Jssor Slider Begin -->
-    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 900px;
-        height: 700px; background: #FFFFFF; overflow: hidden;">
+    <div id="slider1_container" class="slider-container">
 
         <!-- Loading Screen -->
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -23,7 +24,7 @@
         </div>
 
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 600px; overflow: hidden;">
+        <div u="slides" class="slider-slides">
           <div>
               <img u="image" src="http://static.wixstatic.com/media/1390a8_de0129b678f641c5878f6fc9dc8e39a3.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
               <img u="thumb" src="http://static.wixstatic.com/media/1390a8_de0129b678f641c5878f6fc9dc8e39a3.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
@@ -139,12 +140,11 @@
         </div>
         
         <!--#region Arrow Navigator Skin Begin -->
-        <link href="https://rawgit.com/ericsson49/urasol/master/gallery_style.css" rel="stylesheet">
         <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora05l" style="top: 300px; left: 8px;">
+        <span u="arrowleft" class="jssora05l" style="left: 8px;">
         </span>
         <!-- Arrow Right -->
-        <span u="arrowright" class="jssora05r" style="top: 300px; right: 8px">
+        <span u="arrowright" class="jssora05r" style="right: 8px">
         </span>
         <!--#endregion Arrow Navigator Skin End -->
         <!--#region Thumbnail Navigator Skin Begin -->
