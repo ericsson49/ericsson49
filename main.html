@@ -41,15 +41,32 @@
     </div>
   </div>
 </nav>
-  
+
+<style>
+ul.menu,ul.submenu {
+  list-style: outside none none;
+}
+ul.menu {
+  padding-left: 0px;
+}
+ul.submenu {
+  padding-left: 15px;
+}
+.menu > li.active > a,
+.submenu > li.active > a {
+  text-decoration: none;
+  color: grey;
+}
+</style>
+
 <div class="container">
   <div class="row">
   <div class="hidden-xs col-sm-2">
-    <ul class="nav nav-pills nav-stacked">
+    <ul class="menu">
             <li class="active"><a href="main.html">Home</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li>
+              <span>Portfolio</span>
+              <ul class="submenu">
                   <li><a href="model.html">Model</a></li>
                   <li><a href="jewelry.html">Jewelry</a></li>
                   <li><a href="shoes.html">Shoes</a></li>
