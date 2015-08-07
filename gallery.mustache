@@ -1,3 +1,4 @@
+{{^gen}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
 </head>
 
 <body>
+{{/gen}}
     <script type="text/javascript" src="https://rawgit.com/jssor/slider/master/js/jssor.slider.min.js"></script>
     <script type="text/javascript" src="gallery_init.js"></script>
     <link href="gallery_style.css" rel="stylesheet">
@@ -63,6 +65,8 @@
             jssor_slider1_starter('slider1_container');
         </script>
     </div>
+{{^gen}}
 </body>
 </html>
+{{/gen}}
 

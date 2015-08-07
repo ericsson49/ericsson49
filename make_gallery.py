@@ -2,6 +2,9 @@ import sys
 import json
 import pystache
 
+reload(sys)
+sys.setdefaultencoding('UTF8')
+
 name = sys.argv[1]
 f1 = sys.argv[2]
 f2 = f1[0:len(f1)-5] + '.html'

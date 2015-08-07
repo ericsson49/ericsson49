@@ -1,170 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Mannequin</title>
-<meta charset="utf-8">
+  <title>Object Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-    <script type="text/javascript" src="https://rawgit.com/jssor/slider/master/js/jssor.slider.min.js"></script>
-    <script type="text/javascript" src="gallery_init.js"></script>
-    <link href="gallery_style.css" rel="stylesheet">
 
-    <!-- Jssor Slider Begin -->
-    <div id="slider1_container" class="slider-container">
-
-        <!-- Loading Screen -->
-        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
-            </div>
-            <div style="position: absolute; display: block; background: url(https://raw.githubusercontent.com/jssor/slider/master/img/loading.gif) no-repeat center center;
-                top: 0px; left: 0px;width: 100%;height:100%;">
-            </div>
-        </div>
-
-        <!-- Slides Container -->
-        <div u="slides" class="slider-slides">
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_de0129b678f641c5878f6fc9dc8e39a3.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_de0129b678f641c5878f6fc9dc8e39a3.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_ba92baa14755461ba5814e007b70266d.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_ba92baa14755461ba5814e007b70266d.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_57a784729aed4570bbebbdf638d4e958.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_57a784729aed4570bbebbdf638d4e958.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_75ff930ca11f41b991711ad9b37e6994.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_75ff930ca11f41b991711ad9b37e6994.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_5719d50ea4504102b6851ad72529c807.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_5719d50ea4504102b6851ad72529c807.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_2f10f66314d04eaca99f99dba4a580f8.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_2f10f66314d04eaca99f99dba4a580f8.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_4f5399e76e0943798f281e9711d85521.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_4f5399e76e0943798f281e9711d85521.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_f2cb0712661f4d69b5215a35eaf9ae30.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_f2cb0712661f4d69b5215a35eaf9ae30.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_6c546a39a9774e9f998defdfc556364c.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_6c546a39a9774e9f998defdfc556364c.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_5a906c55dfc647fd92f532b78dd7ac1a.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_5a906c55dfc647fd92f532b78dd7ac1a.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_c35bd9800dd5419dbf5769a5d151d5f6.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_c35bd9800dd5419dbf5769a5d151d5f6.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_3c1cba1026e5408eb56960d2f97d3950.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_3c1cba1026e5408eb56960d2f97d3950.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_dee18c0aa7a44035a1982170bef055f1.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_dee18c0aa7a44035a1982170bef055f1.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_2af4b3cf7a154f53b56ee13dfdb80537.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_2af4b3cf7a154f53b56ee13dfdb80537.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_4f1cc9fc545f4c8f8f2ec5a0b444c0f5.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_4f1cc9fc545f4c8f8f2ec5a0b444c0f5.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_d91ed1081e144e30a774f3e1045c2ffa.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_d91ed1081e144e30a774f3e1045c2ffa.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_3416e8111f5c4ab88bd6500bf4d231ce.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_3416e8111f5c4ab88bd6500bf4d231ce.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_3956ad5c77c24541a3b83def341bafd7.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_3956ad5c77c24541a3b83def341bafd7.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_319ef7baaa4a4eea8501b9949d91cf0b.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_319ef7baaa4a4eea8501b9949d91cf0b.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_493a3d4dbb30448999eac46d50bb2ce8.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_493a3d4dbb30448999eac46d50bb2ce8.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_48a34a56771444f79df9fd224d4c5e05.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_48a34a56771444f79df9fd224d4c5e05.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_ba6fe05b532546e59e2b1c96bf2cf106.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_ba6fe05b532546e59e2b1c96bf2cf106.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_76108644c0184250acd4a96be6316545.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_76108644c0184250acd4a96be6316545.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_1a0872afa3dd49e79a276746bd92039f.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_1a0872afa3dd49e79a276746bd92039f.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_213326370b424cefa0b76214797adfae.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_213326370b424cefa0b76214797adfae.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_88b7924ae7594f1e9c964d4596c15464.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_88b7924ae7594f1e9c964d4596c15464.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_1e0f2bc67a7a4250b5ea82d5287a4372.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_1e0f2bc67a7a4250b5ea82d5287a4372.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-          <div>
-              <img u="image" src="http://static.wixstatic.com/media/1390a8_29460f4b211e4e26ba72f1ef81f27e9a.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
-              <img u="thumb" src="http://static.wixstatic.com/media/1390a8_29460f4b211e4e26ba72f1ef81f27e9a.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
-          </div>
-        </div>
-        
-        <!--#region Arrow Navigator Skin Begin -->
-        <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora05l" style="left: 8px;">
-        </span>
-        <!-- Arrow Right -->
-        <span u="arrowright" class="jssora05r" style="right: 8px">
-        </span>
-        <!--#endregion Arrow Navigator Skin End -->
-        <!--#region Thumbnail Navigator Skin Begin -->
-        <!-- thumbnail navigator container -->
-        <div u="thumbnavigator" class="jssort01" style="left: 0px; bottom: 0px;">
-            <!-- Thumbnail Item Skin Begin -->
-            <div u="slides" style="cursor: default;">
-                <div u="prototype" class="p">
-                    <div class=w><div u="thumbnailtemplate" class="t"></div></div>
-                    <div class=c></div>
-                </div>
-            </div>
-            <!-- Thumbnail Item Skin End -->
-        </div>
-        <!--#endregion Thumbnail Navigator Skin End -->
-        <!-- Trigger -->
-        <script>
-            jssor_slider1_starter('slider1_container');
-        </script>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">Object Studio</a>
     </div>
+    <div class="collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+            <li><a href="main.html">Home</a></li>
+            <li class="dropdown">
+              <a class="active dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="model.html">Model</a></li>
+                  <li><a href="jewelry.html">Jewelry</a></li>
+                  <li><a href="shoes.html">Shoes</a></li>
+                  <li class="active"><a href="mannequin.html">Mannequin</a></li>
+                  <li><a href="accessories.html">Accessories</a></li>
+                  <li><a href="still-life.html">Still Life</a></li>
+                  <li><a href="food.html">Food</a></li>
+              </ul>
+            </li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <div class="row">
+  <div class="hidden-xs col-sm-2">
+    <ul class="nav nav-pills nav-stacked">
+            <li><a href="main.html">Home</a></li>
+            <li class="dropdown">
+              <a class="active dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="model.html">Model</a></li>
+                  <li><a href="jewelry.html">Jewelry</a></li>
+                  <li><a href="shoes.html">Shoes</a></li>
+                  <li class="active"><a href="mannequin.html">Mannequin</a></li>
+                  <li><a href="accessories.html">Accessories</a></li>
+                  <li><a href="still-life.html">Still Life</a></li>
+                  <li><a href="food.html">Food</a></li>
+              </ul>
+            </li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <div class="embed-responsive embed-responsive-4by3">
+          <script type="text/javascript" src="https://rawgit.com/jssor/slider/master/js/jssor.slider.min.js"></script>
+          <script type="text/javascript" src="gallery_init.js"></script>
+          <link href="gallery_style.css" rel="stylesheet">
+
+          <!-- Jssor Slider Begin -->
+          <div id="slider1_container" class="slider-container">
+
+              <!-- Loading Screen -->
+              <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                  <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                      background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+                  </div>
+                  <div style="position: absolute; display: block; background: url(https://raw.githubusercontent.com/jssor/slider/master/img/loading.gif) no-repeat center center;
+                      top: 0px; left: 0px;width: 100%;height:100%;">
+                  </div>
+              </div>
+
+              <!-- Slides Container -->
+              <div u="slides" class="slider-slides">
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_de0129b678f641c5878f6fc9dc8e39a3.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_de0129b678f641c5878f6fc9dc8e39a3.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_ba92baa14755461ba5814e007b70266d.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_ba92baa14755461ba5814e007b70266d.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_57a784729aed4570bbebbdf638d4e958.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_57a784729aed4570bbebbdf638d4e958.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_75ff930ca11f41b991711ad9b37e6994.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_75ff930ca11f41b991711ad9b37e6994.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_5719d50ea4504102b6851ad72529c807.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_5719d50ea4504102b6851ad72529c807.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_2f10f66314d04eaca99f99dba4a580f8.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_2f10f66314d04eaca99f99dba4a580f8.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_4f5399e76e0943798f281e9711d85521.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_4f5399e76e0943798f281e9711d85521.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_f2cb0712661f4d69b5215a35eaf9ae30.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_f2cb0712661f4d69b5215a35eaf9ae30.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_6c546a39a9774e9f998defdfc556364c.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_6c546a39a9774e9f998defdfc556364c.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_5a906c55dfc647fd92f532b78dd7ac1a.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_5a906c55dfc647fd92f532b78dd7ac1a.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_c35bd9800dd5419dbf5769a5d151d5f6.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_c35bd9800dd5419dbf5769a5d151d5f6.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_3c1cba1026e5408eb56960d2f97d3950.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_3c1cba1026e5408eb56960d2f97d3950.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_dee18c0aa7a44035a1982170bef055f1.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_dee18c0aa7a44035a1982170bef055f1.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_2af4b3cf7a154f53b56ee13dfdb80537.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_2af4b3cf7a154f53b56ee13dfdb80537.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_4f1cc9fc545f4c8f8f2ec5a0b444c0f5.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_4f1cc9fc545f4c8f8f2ec5a0b444c0f5.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_d91ed1081e144e30a774f3e1045c2ffa.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_d91ed1081e144e30a774f3e1045c2ffa.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_3416e8111f5c4ab88bd6500bf4d231ce.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_3416e8111f5c4ab88bd6500bf4d231ce.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_3956ad5c77c24541a3b83def341bafd7.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_3956ad5c77c24541a3b83def341bafd7.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_319ef7baaa4a4eea8501b9949d91cf0b.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_319ef7baaa4a4eea8501b9949d91cf0b.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_493a3d4dbb30448999eac46d50bb2ce8.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_493a3d4dbb30448999eac46d50bb2ce8.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_48a34a56771444f79df9fd224d4c5e05.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_48a34a56771444f79df9fd224d4c5e05.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_ba6fe05b532546e59e2b1c96bf2cf106.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_ba6fe05b532546e59e2b1c96bf2cf106.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_76108644c0184250acd4a96be6316545.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_76108644c0184250acd4a96be6316545.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_1a0872afa3dd49e79a276746bd92039f.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_1a0872afa3dd49e79a276746bd92039f.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_213326370b424cefa0b76214797adfae.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_213326370b424cefa0b76214797adfae.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_88b7924ae7594f1e9c964d4596c15464.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_88b7924ae7594f1e9c964d4596c15464.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_1e0f2bc67a7a4250b5ea82d5287a4372.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_1e0f2bc67a7a4250b5ea82d5287a4372.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+                <div>
+                    <img u="image" src="http://static.wixstatic.com/media/1390a8_29460f4b211e4e26ba72f1ef81f27e9a.jpg_srz_353_577_75_22_0.5_1.2_75_jpg_srz"/>
+                    <img u="thumb" src="http://static.wixstatic.com/media/1390a8_29460f4b211e4e26ba72f1ef81f27e9a.jpg_srz_50_50_75_22_0.5_1.2_75_jpg_srz"/>
+                </div>
+              </div>
+              
+              <!--#region Arrow Navigator Skin Begin -->
+              <!-- Arrow Left -->
+              <span u="arrowleft" class="jssora05l" style="left: 8px;">
+              </span>
+              <!-- Arrow Right -->
+              <span u="arrowright" class="jssora05r" style="right: 8px">
+              </span>
+              <!--#endregion Arrow Navigator Skin End -->
+              <!--#region Thumbnail Navigator Skin Begin -->
+              <!-- thumbnail navigator container -->
+              <div u="thumbnavigator" class="jssort01" style="left: 0px; bottom: 0px;">
+                  <!-- Thumbnail Item Skin Begin -->
+                  <div u="slides" style="cursor: default;">
+                      <div u="prototype" class="p">
+                          <div class=w><div u="thumbnailtemplate" class="t"></div></div>
+                          <div class=c></div>
+                      </div>
+                  </div>
+                  <!-- Thumbnail Item Skin End -->
+              </div>
+              <!--#endregion Thumbnail Navigator Skin End -->
+              <!-- Trigger -->
+              <script>
+                  jssor_slider1_starter('slider1_container');
+              </script>
+          </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+   <div class="col-xs-8 col-sm-offset-2 col-sm-4">
+    <p class="font_9"><span class="color_16">@ 2015 «AVV-production»</span></p>
+   </div>
+
+   <div class="col-xs-4 col-sm-offset-3 col-sm-3">
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="https://vk.com/urasol" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/a76659a6c8524bd0b7d362fa91160498.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="https://www.facebook.com/profile.php?id=1846041705" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/72a44c1b3b7c450287b9f4dd21be1548.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="http://instagram.com/ura.soloviov" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/15501a32e0b449b48fa639fd8e6935aa.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+     <div style="width:17px;height:17px;margin-bottom:0;margin-right:4px;display:inline-block;">
+       <a href="http://pinterest.com/urasol" target="_blank">
+         <div style="width:17px;height:17px;position:absolute;" >
+           <img alt="" style="width:17px;height:17px;object-fit:cover;" src="http://static.wixstatic.com/media/51595f20831643d4b785234fa63218d1.png_srz_p_17_17_75_22_0.50_1.20_0.00_png_srz">
+         </div>
+       </a>
+     </div>
+   </div>
+  </div>
+</div>
+
 </body>
 </html>
 
