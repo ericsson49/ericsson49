@@ -2,8 +2,8 @@
   position: relative;
   top: 0px;
   left: 0px;
-  width: 900px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
   background: #FFFFFF;
   overflow: hidden;
 }
@@ -13,13 +13,13 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 900px;
-  height: 420px;
+  width: 800px;
+  height: 520px;
   overflow: hidden;
 }
 
 .jssora05l, .jssora05r {
-  top: 200px;
+  top: 250px;
 }
 
 /* jssor slider arrow navigator skin 05 css */
@@ -59,7 +59,7 @@
 .jssort01 {
     position: absolute;
     /* size of thumbnail navigator container */
-    width: 900px;
+    width: 800px;
     height: 80px;
 }
 
