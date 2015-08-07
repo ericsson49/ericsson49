@@ -88,7 +88,7 @@ jssor_slider1_starter = function (containerId) {
     function ScaleSlider() {
         var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
         if (parentWidth)
-            jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 800), 300));
+            jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 2000), 300));
         else
             $Jssor$.$Delay(ScaleSlider, 30);
     }
