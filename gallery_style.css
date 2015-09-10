@@ -90,11 +90,11 @@
 
 .jssort01 .c {
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0px;
+    left: 0px;
     width: 68px;
     height: 68px;
-    border: #000 0px solid;
+    border: #ffffff 2px solid;
     box-sizing: content-box;
     background: url(https://raw.githubusercontent.com/jssor/slider/master/img/t01.png) -800px -800px no-repeat;
     _background: none;
@@ -122,12 +122,10 @@
 }
 
 .jssort01 .p.pdn .c {
-    top: 2px;
-    left: 2px;
     background-position: 50% 50%;
     width: 68px;
     height: 68px;
-    border: #000 0px solid;
+    border: #ffffff 2px solid;
 }
 
 * html .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {
