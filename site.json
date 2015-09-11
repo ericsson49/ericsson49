@@ -1,14 +1,16 @@
 {
   "brand": "Object Studio",
-  "galleries": [
-    {"name": "Home", "link": "main"},
-    {"name": "Model", "link": "model"},
-    {"name": "Jewelry", "link": "jewelry"},
-    {"name": "Shoes", "link": "shoes"},
-    {"name": "Mannequin", "link": "mannequin"},
-    {"name": "Accessories", "link": "accessories"},
-    {"name": "Still Life", "link": "still-life"},
-    {"name": "Food", "link": "food"}
+  "pages": [
+    {"type": "main", "name": "Home", "link": "main"},
+    {"type": "gallery", "name": "Model", "link": "model"},
+    {"type": "gallery", "name": "Jewelry", "link": "jewelry"},
+    {"type": "gallery", "name": "Shoes", "link": "shoes"},
+    {"type": "gallery", "name": "Mannequin", "link": "mannequin"},
+    {"type": "gallery", "name": "Accessories", "link": "accessories"},
+    {"type": "gallery", "name": "Still Life", "link": "still-life"},
+    {"type": "gallery", "name": "Food", "link": "food"},
+    {"type": "page", "name": "Clients", "link": "clients"},
+    {"type": "page", "name": "Contacts", "link": "contacts"}
   ],
   "social_media": [
     {

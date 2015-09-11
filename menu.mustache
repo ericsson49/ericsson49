@@ -1,0 +1,35 @@
+<style>
+  ul.menu,ul.submenu {
+    list-style: outside none none;
+  }
+  ul.menu {
+    padding-left: 0px;
+  }
+  ul.submenu {
+    padding-left: 15px;
+  }
+  .menu > li.active > a,
+  .submenu > li.active > a {
+    text-decoration: none;
+    color: grey;
+  }
+</style>
+
+<ul class="menu">
+  {{#items}}
+    {{#dropdown}}
+      <li>
+        <span>{{name}}</span>
+        <ul class="submenu">
+          {{#items}}
+            <li{{#active}} class="active"{{/active}}><a href="{{link}}">{{name}}</a></li>
+          {{/items}}
+        </ul>
+      </li>
+    {{/dropdown}}
+    {{^dropdown}}
+      <li{{#active}} class="active"{{/active}}><a href="{{link}}">{{name}}</a></li>
+    {{/dropdown}}
+  {{/items}}
+</ul>
+
