@@ -9,7 +9,6 @@
     {"type": "gallery", "name": "Аксессуары", "link": "accessories"},
     {"type": "gallery", "name": "Натюрморт", "link": "still-life"},
     {"type": "gallery", "name": "Еда", "link": "food"},
-    {"type": "page", "name": "Клиенты", "link": "clients"},
     {"type": "page", "name": "Контакты", "link": "contacts"}
   ],
   "social_media": [

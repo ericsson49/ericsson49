@@ -25,7 +25,6 @@ for p in pages:
   ctx.update({'items': [
       {'link': 'main.html', 'name': 'Home', 'active': p['link'] == 'main'},
       {'dropdown': 1, 'items': menu, 'name': 'Портфолио', 'active': p['name'] in port_names},
-      {'link': 'clients.html', 'name': 'Клиенты', 'active': p['link'] == 'clients'},
       {'link': 'contacts.html', 'name': 'Контакты', 'active': p['link'] == 'contacts'}
   ]})
 
