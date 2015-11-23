@@ -29,9 +29,18 @@
         <div u="slides" class="slider-slides">
           {{#images}}
           <div>
-            {{#image}}
+            {{#href}}
+             {{#image}}
+              <a u="image" href="{{href}}">
+                <img src="{{image}}"/>
+              </a>
+             {{/image}}
+            {{/href}}
+            {{^href}}
+             {{#image}}
               <img u="image" src="{{image}}"/>
-            {{/image}}
+             {{/image}}
+            {{/href}}
             {{#thumb}}
               <img u="thumb" src="{{thumb}}"/>
             {{/thumb}}
